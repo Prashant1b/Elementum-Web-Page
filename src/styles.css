@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  background: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.exact-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: #ffffff;
+}
+
+.exact-design {
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
+  animation: designReveal 700ms ease-out both;
+}
+
+@keyframes designReveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .exact-design {
+    animation: none;
+  }
+}
