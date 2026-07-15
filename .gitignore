@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.env.*
+*.log
+asset-contact-sheet.png
+page-*.png
+top-*.png
+.DS_Store
+Thumbs.db
