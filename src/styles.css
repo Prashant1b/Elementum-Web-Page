@@ -18,13 +18,25 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
+  width: 100%;
+  max-width: 100%;
   min-width: 320px;
   overflow-x: hidden;
   background: #fff;
+}
+
+#root,
+main {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -499,6 +511,8 @@ blockquote {
 
 .footer {
   position: relative;
+  width: 100vw;
+  max-width: 100vw;
   min-height: 1295px;
   padding-top: 120px;
   overflow: hidden;
@@ -831,6 +845,27 @@ blockquote {
 }
 
 @media (max-width: 560px) {
+  html {
+    scrollbar-width: none;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+    min-width: 0;
+  }
+
+  .hero,
+  .testimonials,
+  .footer {
+    width: 100vw;
+    max-width: 100vw;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
   .header {
     padding-top: 20px;
   }
@@ -873,6 +908,15 @@ blockquote {
   .testimonials blockquote {
     width: min(calc(100% - 96px), 280px);
     font-size: 11px;
+  }
+
+  .newsletter {
+    padding-inline: 20px;
+  }
+
+  .newsletter p {
+    max-width: 300px;
+    margin-inline: auto;
   }
 
   .footer-grid {

@@ -6,5 +6,7 @@ dist/
 asset-contact-sheet.png
 page-*.png
 top-*.png
+mobile-*.png
+moto-*.png
 .DS_Store
 Thumbs.db
